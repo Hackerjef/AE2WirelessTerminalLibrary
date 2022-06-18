@@ -1,24 +1,14 @@
-[![build master](https://github.com/Tfarcenim/AE2WirelessTerminalLibrary/actions/workflows/build_master.yml/badge.svg)](https://github.com/Tfarcenim/AE2WirelessTerminalLibrary/actions/workflows/build_master.yml)
-[![Curseforge downloads](http://cf.way2muchnoise.eu/full_483310_downloads.svg)](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals-forge)
-[![Curseforge Versions](http://cf.way2muchnoise.eu/versions/483310.svg)](https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2-wireless-terminals/files)
-
-Applied Energistics 2 Wireless Terminals
+Applied Energistics 2 Wireless Crafting Terminal (fork of Applied Energistics 2 Wireless Terminals Forge)
 ========================================
-This is a Forge Port of the Fabric port
+This is a fork of the Forge port of a Fabric port
 of [Wireless Crafting Terminal](https://www.curseforge.com/minecraft/mc-mods/wireless-crafting-terminal)
-, [Wireless Pattern Terminal](https://www.curseforge.com/minecraft/mc-mods/wireless-pattern-terminal)
-, [Wireless Interface Terminal](https://www.curseforge.com/minecraft/mc-mods/wireless-interface-terminal), [~~Wireless
-Fluid Terminal~~](https://www.curseforge.com/minecraft/mc-mods/wireless-fluid-terminal) (not yet implemented)
 and [Wireless Terminal Library](https://www.curseforge.com/minecraft/mc-mods/ae2wtlib)
 
-It features several wireless versions of Applied Energistics 2 terminals with support for an Infinity Booster Card,
+It features wireless versions of Applied Energistics 2 crafting terminal with support for an Infinity Booster Card,
 which allows terminals to work from everywhere and even across dimensions.
-
-It also adds a wireless universal terminal which has all wireless terminals in one item
 
 ## Missing Features / Known Issues
 
-- Wireless Fluid Terminal
 - Magnet Card can't filter items
 - Curios support
 - support for viewcells
