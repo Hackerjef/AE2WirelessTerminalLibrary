@@ -1,0 +1,21 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "pegasi_51b.ae2wct.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "ae2wctlib.refmap.json",
+  "mixins": [
+    "AEBaseContainerAccess",
+    "ContainerAccess",
+    "ContainerTypeBuilderMixin",
+    "CraftConfirmContainerMixin",
+    "InvActionPacketMixin",
+    "PlayerInventoryMixin"
+  ],
+  "client": [
+    "AESubScreenMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

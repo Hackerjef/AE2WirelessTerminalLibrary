@@ -1,6 +1,6 @@
-package tfar.ae2wt.rei;
+package pegasi_51b.ae2wct.rei;
 
-import tfar.ae2wt.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
+import pegasi_51b.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 import me.shedaniel.rei.api.AutoTransferHandler;
 import me.shedaniel.rei.api.RecipeDisplay;
 

@@ -1,4 +1,4 @@
-package tfar.ae2wt.rei;
+package pegasi_51b.ae2wct.rei;
 
 import appeng.helpers.IContainerCraftingPacket;
 import me.shedaniel.rei.api.AutoTransferHandler;

@@ -1,0 +1,27 @@
+{
+  "itemGroup.ae2wctlib.general": "AE2 Wireless Terminals (AE2WTLib)",
+  "key.category.ae2wctlib": "AE2 Wireless Terminals (AE2WTLib)",
+
+  "gui.ae2wctlib.emptytrash": "Пустая мусорная корзина",
+  "gui.ae2wctlib.emptytrash.desc": "Удаляет содержимое слота Мусорной корзины.",
+
+  "item.ae2wctlib.infinity_booster_card": "Бесконечная карта-ускоритель",
+  "item.ae2wctlib.infinity_booster_card.desc": "Расширяет Беспроводные терминалы до бесконечности.",
+  "item.ae2wctlib.magnet_card": "Магнитная карта",
+  "item.ae2wctlib.magnet_card.desc": "Магнитное улучшения для Беспроводного терминала изготовления.",
+  "gui.ae2wctlib.magnet_card": "Магнитная карта",
+  "gui.ae2wctlib.magnetcard.desc.off": "Выключена",
+  "gui.ae2wctlib.magnetcard.desc.inv": "Подбирать в Инвентарь",
+  "gui.ae2wctlib.magnetcard.desc.me": "Подбирать в МЕ",
+  "gui.ae2wctlib.cycle_terminal.desc": "Открыть следующий Терминал",
+
+  "item.ae2wctlib.wireless_crafting_terminal": "Беспроводной терминал изготовления",
+  "item.ae2wctlib.wireless_pattern_terminal": "Беспроводной шаблон терминала",
+  "item.ae2wctlib.wireless_interface_terminal": "Беспроводной интерфейс терминала",
+  "item.ae2wctlib.wireless_universal_terminal": "Беспроводной универсальный терминал",
+  "item.ae2wctlib.wireless_universal_terminal.desc": "Терминалов установлено:",
+
+  "key.ae2wctlib.wct": "Открыть Беспроводной терминал изготовления",
+  "key.ae2wctlib.wpt": "Открыть Беспроводной шаблон терминала",
+  "key.ae2wctlib.wit": "Открыть Беспроводной интерфейс терминал"
+}

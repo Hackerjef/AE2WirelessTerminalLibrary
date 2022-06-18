@@ -1,0 +1,11 @@
+{
+  "type": "ae2wctlib:combine",
+  "TerminalA": {
+    "item": "ae2wctlib:wireless_interface_terminal"
+  },
+  "TerminalB": {
+    "item": "ae2wctlib:wireless_pattern_terminal"
+  },
+  "TerminalAName": "interface",
+  "TerminalBName": "pattern"
+}

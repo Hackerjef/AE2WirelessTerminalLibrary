@@ -8,16 +8,16 @@ modLoader="javafml" #mandatory
 # A version range to match for said mod loader - for regular FML @Mod it will be the forge version
 loaderVersion="[34,)" #mandatory (32 is current forge version)
 # A URL to refer people to when problems occur with this mod
-issueTrackerURL="https://github.com/Tfarcenim/AE2WirelessTerminalLibrary/issues/" #optional
+issueTrackerURL="https://github.com/pegasi-51b/AE2WirelessTerminalLibrary/issues/" #optional
 # A list of mods - how many allowed here is determined by the individual mod loader
-license="Unlicense"
+license="MIT"
 [[mods]] #mandatory
 # The modid of the mod
-modId="ae2wtlib" #mandatory
+modId="ae2wctlib" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
  # A display name for the mod
-displayName="AE2 Wireless Terminals" #mandatory
+displayName="AE2 Wireless Crafting Terminal" #mandatory
 # A URL to query for updates for this mod. See the JSON update specification <here>
 #updateJSONURL="http://myurl.me/" #optional
 # A URL for the "homepage" for this mod, displayed in the mod UI
@@ -27,13 +27,14 @@ displayName="AE2 Wireless Terminals" #mandatory
 # A text field displayed in the mod UI
 #credits="Thanks for this example mod goes to Java" #optional
 # A text field displayed in the mod UI
-authors="mari_023,Tfarecnim" #optional
+authors="mari_023,Tfarecnim, pegasi_51b" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
 
 A Library which provides basic functions to create AE2 Wireless Terminals with infinite range capabilities
+This fork leaves only Wireless Crafting Terminal.
 '''
-[[dependencies.ae2twlib]] #optional
+[[dependencies.ae2wctlib]] #optional
 # the modid of the dependency
 modId="appliedenergistics2" #mandatory
 # Does this dependency have to exist - if not, ordering below must be specified
