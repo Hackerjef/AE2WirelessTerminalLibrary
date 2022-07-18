@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "pegasi_51b.ae2wct.mixin",
+  "package": "dev.nadie.ae2wct.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "ae2wctlib.refmap.json",
   "mixins": [

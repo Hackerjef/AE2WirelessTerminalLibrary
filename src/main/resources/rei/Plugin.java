@@ -1,7 +1,7 @@
 package pegasi_51b.ae2wct.rei;
 
-import pegasi_51b.ae2wct.init.ModItems;
-import pegasi_51b.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
+import dev.nadie.ae2wct.init.ModItems;
+import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 import me.shedaniel.rei.api.EntryStack;
 import me.shedaniel.rei.api.RecipeHelper;
 import me.shedaniel.rei.api.plugins.REIPluginV0;

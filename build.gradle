@@ -17,7 +17,7 @@ apply plugin: 'maven-publish'
 
 
 version = "1.0.2-1.16.5"
-group = "com.pegasi_51b.ae2wctlib" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
+group = "dev.nadie.ae2wctlib" // http://maven.apache.org/guides/mini/guide-naming-conventions.html
 archivesBaseName = "ae2wctlib"
 
 sourceCompatibility = targetCompatibility = compileJava.sourceCompatibility = compileJava.targetCompatibility = '1.8' // Need this here so eclipse task generates correctly.
