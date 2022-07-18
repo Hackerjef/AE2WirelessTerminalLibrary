@@ -23,6 +23,7 @@ import net.minecraftforge.registries.IForgeRegistryEntry;
 
 @Mod(value = AE2WirelessCraftingTerminal.MODID)
 public class AE2WirelessCraftingTerminal {
+
     public static final String MODID = "ae2wctlib";
 
     public static final ItemGroup ITEM_GROUP = new ItemGroup(MODID) {

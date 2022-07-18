@@ -8,8 +8,7 @@
     "AEBaseContainerAccess",
     "ContainerAccess",
     "ContainerTypeBuilderMixin",
-    "CraftConfirmContainerMixin",
-    "InvActionPacketMixin"
+    "CraftConfirmContainerMixin"
   ],
   "client": [
     "AESubScreenMixin"

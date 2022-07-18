@@ -3,5 +3,6 @@
   "key.category.ae2wctlib": "AE2 Wireless Crafting Terminal",
   "item.ae2wctlib.wireless_crafting_terminal": "Wireless Crafting Terminal",
   "AppEng.GuiITooltip.Unlinked": "Unlinked",
-  "key.ae2wctlib.wct": "Open Wireless Crafting Terminal"
+  "key.ae2wctlib.wct": "Open Wireless Crafting Terminal",
+  "gui.ae2wctlib.wireless_crafting_terminal_name": "UwU Terminal"
 }

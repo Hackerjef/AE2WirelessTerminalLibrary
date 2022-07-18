@@ -15,7 +15,7 @@
   "text": {
     "dialog_title": {
       "text": {
-        "translate": "gui.appliedenergistics2.Terminal"
+        "translate": "gui.ae2wctlib.wireless_crafting_terminal_name"
       },
       "position": {
         "left": 8,

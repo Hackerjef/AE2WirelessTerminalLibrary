@@ -29,8 +29,12 @@ import appeng.tile.networking.WirelessTileEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.ItemStack;
+import java.util.concurrent.atomic.AtomicBoolean;
 
 public abstract class WTGuiObject implements IGuiItemObject, IEnergySource, IActionHost, IInventorySlotAware {
+
+    // What the fuck java cant rename imports .-. https://stackoverflow.com/a/68089103
+    private static class boosterItems extends dev.nadie.aeinfinitybooster.setup.ModItems {}
 
     private final FixedViewCellInventory fixedViewCellInventory;
     private final ItemStack effectiveItem;
@@ -107,6 +111,30 @@ public abstract class WTGuiObject implements IGuiItemObject, IEnergySource, IAct
     }
 
     private boolean testWap(final IWirelessAccessPoint wap) {
+        AtomicBoolean _has_range = new AtomicBoolean(false);
+
+        wap.getGrid().getMachines(WirelessTileEntity.class).forEach(iGridNode -> {
+            WirelessTileEntity wirelessBlockEntity = (WirelessTileEntity) iGridNode.getMachine();
+
+            // TODO: ModItems.INFINITY_CARD KEKW
+            if (wirelessBlockEntity.getInternalInventory().getStackInSlot(0).getItem() == boosterItems.DIMENSION_CARD.get()) {
+                myRange = 16;
+                _has_range.set(true);
+                return;
+            }
+
+            if (this.myPlayer.world.getDimensionKey().getLocation().toString().equals(wap.getLocation().getWorld().getDimensionKey().getLocation().toString())) {
+                if (wirelessBlockEntity.getInternalInventory().getStackInSlot(0).getItem() == boosterItems.INFINITY_CARD.get()) {
+                    myRange = 16;
+                    _has_range.set(true);
+                    return;
+                }
+            }
+        });
+
+        if (_has_range.get()) {
+            return true;
+        }
 
         double rangeLimit = wap.getRange();
         rangeLimit *= rangeLimit;
