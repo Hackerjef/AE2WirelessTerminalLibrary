@@ -9,9 +9,7 @@ displayName="AE2 Wireless Crafting Terminal" #mandatory
 authors="mari_023,Tfarecnim, pegasi_51b, nadie" #optional
 description='''
 A Library which provides basic functions to create AE2 Wireless Terminals with infinite range capabilities
-This fork leaves only Wireless Crafting Terminal.
-
-This has been edited/cleaned up more by Nadie (https://nadie.dev)
+This fork leaves only Wireless Crafting Terminal and support for AEInfinityBooster
 '''
 [[dependencies.ae2wctlib]] #optional
 modId="appliedenergistics2" #mandatory
