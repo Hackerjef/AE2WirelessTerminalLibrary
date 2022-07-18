@@ -7,7 +7,6 @@ import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.recipe.transfer.IRecipeTransferHandler;
 import mezz.jei.api.registration.IRecipeTransferRegistration;
 import net.minecraft.util.ResourceLocation;
-//import pegasi_51b.ae2wct.wpt.WirelessPatternTerminalContainer;
 
 
 @JeiPlugin

@@ -119,6 +119,7 @@ jar {
         attributes([
                 "Specification-Title": "ae2wctlib",
                 "Specification-Version": "1", // We are version 1 of ourselves
+                "Implementation-Version"  : project.jar.archiveVersion,
                 "Implementation-Title": project.name,
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
                 "MixinConfigs": "ae2wctlib.mixins.json"
