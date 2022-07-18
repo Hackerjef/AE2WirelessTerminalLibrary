@@ -21,25 +21,7 @@ public class InvActionPacketMixin {
     @Inject(method = "serverPacketData", at = @At(value = "TAIL"), require = 1, allow = 1, remap = false)
     public void serverPacketData(INetworkInfo manager, PlayerEntity player, CallbackInfo ci) {
         if(action == InventoryAction.AUTO_CRAFT) {
-     /*       final ServerPlayerEntity sender = (ServerPlayerEntity) player;
-            if(sender.openContainer instanceof WirelessCraftingTerminalContainer || sender.openContainer instanceof WirelessPatternTerminalContainer) {
-                final AEBaseContainer baseContainer = (AEBaseContainer) sender.openContainer;
-                final ContainerLocator locator = baseContainer.getLocator();
-                if(locator != null) {
-                    WirelessCraftAmountContainer.openServer(player, locator);
 
-                    if(sender.openContainer instanceof WirelessCraftAmountContainer) {
-                        final WirelessCraftAmountContainer cca = (WirelessCraftAmountContainer) sender.openContainer;
-
-                        if(baseContainer.getTargetStack() != null) {
-                            cca.getCraftingItem().putStack(baseContainer.getTargetStack().asItemStackRepresentation());
-                            // This is the *actual* item that matters, not the display item above
-                            cca.setItemToCraft(baseContainer.getTargetStack());
-                        }
-                        cca.detectAndSendChanges();
-                    }
-                }
-            }*/
         }
     }
 }

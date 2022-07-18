@@ -1,6 +1,7 @@
 package dev.nadie.ae2wct.mixin;
 
 import appeng.client.gui.implementations.AESubScreen;
+import dev.nadie.ae2wct.terminal.WTGuiObject;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.ItemStack;
 import org.spongepowered.asm.mixin.Final;
@@ -10,7 +11,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
-import dev.nadie.ae2wct.terminal.WTGuiObject;
 
 @Mixin(value = AESubScreen.class, remap = false)
 public class AESubScreenMixin {

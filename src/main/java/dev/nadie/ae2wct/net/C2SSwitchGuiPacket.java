@@ -2,12 +2,12 @@ package dev.nadie.ae2wct.net;
 
 import appeng.container.AEBaseContainer;
 import appeng.container.ContainerLocator;
+import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.container.Container;
 import net.minecraft.network.PacketBuffer;
 import net.minecraft.server.MinecraftServer;
 import net.minecraftforge.fml.network.NetworkEvent;
-import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 
 import java.util.function.Supplier;
 

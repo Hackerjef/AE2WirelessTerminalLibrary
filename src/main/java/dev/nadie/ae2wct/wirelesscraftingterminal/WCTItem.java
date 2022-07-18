@@ -2,10 +2,10 @@ package dev.nadie.ae2wct.wirelesscraftingterminal;
 
 import appeng.container.ContainerLocator;
 import appeng.core.AEConfig;
+import dev.nadie.ae2wct.AE2WirelessCraftingTerminal;
+import dev.nadie.ae2wct.terminal.AbstractWirelessTerminalItem;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
-import dev.nadie.ae2wct.terminal.AbstractWirelessTerminalItem;
-import dev.nadie.ae2wct.AE2WirelessCraftingTerminal;
 
 public class WCTItem extends AbstractWirelessTerminalItem {
 

@@ -2,6 +2,7 @@ package dev.nadie.ae2wct.mixin;
 
 import appeng.container.ContainerLocator;
 import appeng.container.implementations.ContainerTypeBuilder;
+import dev.nadie.ae2wct.terminal.AbstractWirelessTerminalItem;
 import dev.nadie.ae2wct.wirelesscraftingterminal.WCTGuiObject;
 import dev.nadie.ae2wct.wirelesscraftingterminal.WCTItem;
 import net.minecraft.entity.player.PlayerEntity;
@@ -12,7 +13,6 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import dev.nadie.ae2wct.terminal.AbstractWirelessTerminalItem;
 
 @Mixin(value = ContainerTypeBuilder.class, remap = false)
 public class ContainerTypeBuilderMixin<I> {

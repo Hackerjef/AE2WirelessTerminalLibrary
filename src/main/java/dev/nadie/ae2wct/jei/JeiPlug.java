@@ -1,12 +1,12 @@
 package dev.nadie.ae2wct.jei;
 
 import dev.nadie.ae2wct.AE2WirelessCraftingTerminal;
+import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 import mezz.jei.api.IModPlugin;
 import mezz.jei.api.JeiPlugin;
 import mezz.jei.api.recipe.transfer.IRecipeTransferHandler;
 import mezz.jei.api.registration.IRecipeTransferRegistration;
 import net.minecraft.util.ResourceLocation;
-import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 //import pegasi_51b.ae2wct.wpt.WirelessPatternTerminalContainer;
 
 

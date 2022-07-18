@@ -23,6 +23,8 @@ import dev.nadie.ae2wct.WTConfig;
 import dev.nadie.ae2wct.init.Menus;
 import dev.nadie.ae2wct.terminal.AbstractWirelessTerminalItem;
 import dev.nadie.ae2wct.terminal.InternalInventory;
+import dev.nadie.ae2wct.terminal.SlotType;
+import dev.nadie.ae2wct.terminal.WTInventoryHandler;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.entity.player.ServerPlayerEntity;
@@ -38,8 +40,6 @@ import net.minecraft.world.World;
 import net.minecraftforge.fml.network.NetworkHooks;
 import net.minecraftforge.items.IItemHandler;
 import net.minecraftforge.items.wrapper.PlayerInvWrapper;
-import dev.nadie.ae2wct.terminal.SlotType;
-import dev.nadie.ae2wct.terminal.WTInventoryHandler;
 
 import java.util.List;
 import java.util.Objects;

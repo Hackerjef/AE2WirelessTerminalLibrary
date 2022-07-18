@@ -90,11 +90,17 @@ repositories{
             includeGroup 'appeng'
         }
     }
+    maven {
+        name "jitpack.io"
+        url 'https://jitpack.io'
+    }
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:1.16.5-36.2.22"
     annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    compileOnly fg.deobf("com.github.Hackerjef:AEInfinityBooster:1.16-SNAPSHOT")
+    runtimeOnly fg.deobf("com.github.Hackerjef:AEInfinityBooster:1.16-SNAPSHOT")
     compileOnly fg.deobf("appeng:appliedenergistics2:8.4.7")
     runtimeOnly fg.deobf("appeng:appliedenergistics2:8.4.7")
     compileOnly fg.deobf("mezz.jei:jei-1.16.5:7.7.1.138:api")

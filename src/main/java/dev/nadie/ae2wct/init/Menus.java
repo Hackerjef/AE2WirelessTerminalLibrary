@@ -5,11 +5,11 @@ import appeng.container.ContainerOpener;
 import appeng.core.Api;
 import dev.nadie.ae2wct.AE2WirelessCraftingTerminal;
 import dev.nadie.ae2wct.WTConfig;
+import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.ServerPlayerEntity;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraftforge.event.RegistryEvent;
-import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 
 public class Menus {
     public static ContainerType<WirelessCraftingTerminalContainer> WCT = new ContainerType<>(WirelessCraftingTerminalContainer::openClient);

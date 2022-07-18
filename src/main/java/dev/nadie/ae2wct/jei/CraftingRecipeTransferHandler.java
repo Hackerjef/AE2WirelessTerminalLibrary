@@ -3,6 +3,7 @@ package dev.nadie.ae2wct.jei;
 import appeng.api.storage.data.IAEItemStack;
 import appeng.util.item.AEItemStack;
 import com.mojang.blaze3d.matrix.MatrixStack;
+import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 import mezz.jei.api.gui.IRecipeLayout;
 import mezz.jei.api.gui.ingredient.IGuiIngredient;
 import mezz.jei.api.recipe.transfer.IRecipeTransferError;
@@ -12,7 +13,6 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.item.crafting.IRecipe;
 import net.minecraft.util.text.ITextComponent;
 import net.minecraft.util.text.TranslationTextComponent;
-import dev.nadie.ae2wct.wirelesscraftingterminal.WirelessCraftingTerminalContainer;
 
 import java.util.ArrayList;
 import java.util.HashMap;

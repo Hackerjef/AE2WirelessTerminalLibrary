@@ -3,6 +3,10 @@ package dev.nadie.ae2wct;
 import appeng.api.features.IRegistryContainer;
 import appeng.api.features.IWirelessTermRegistry;
 import appeng.core.Api;
+import dev.nadie.ae2wct.client.ae2wctlibclient;
+import dev.nadie.ae2wct.init.Menus;
+import dev.nadie.ae2wct.init.ModItems;
+import dev.nadie.ae2wct.net.PacketHandler;
 import net.minecraft.inventory.container.ContainerType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -16,10 +20,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-import dev.nadie.ae2wct.client.ae2wctlibclient;
-import dev.nadie.ae2wct.init.Menus;
-import dev.nadie.ae2wct.init.ModItems;
-import dev.nadie.ae2wct.net.PacketHandler;
 
 @Mod(value = AE2WirelessCraftingTerminal.MODID)
 public class AE2WirelessCraftingTerminal {
