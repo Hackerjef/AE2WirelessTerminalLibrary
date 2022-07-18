@@ -5,13 +5,16 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "appliedenergistics2:wireless_terminal"
+      "item": "appliedenergistics2:terminal"
     },
     {
-      "item": "appliedenergistics2:fluix_pearl"
+      "item": "appliedenergistics2:dense_energy_cell"
     },
     {
-      "item": "appliedenergistics2:crafting_terminal"
+      "item": "appliedenergistics2:wireless_receiver"
+    },
+    {
+      "item": "minecraft:crafting_table"
     }
   ]
 }

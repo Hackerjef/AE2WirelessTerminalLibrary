@@ -214,20 +214,6 @@ public abstract class AbstractWirelessTerminalItem extends AEBasePoweredItem imp
         wctTag.putBoolean(key, b);
     }
 
-    public boolean hasBoosterCard(ItemStack hostItem) {
-        return getBoosterCard(hostItem).getItem() instanceof ItemInfinityBooster;
-    }
-
-    public void setBoosterCard(ItemStack hostItem, ItemStack boosterCard) {
-        if (hostItem.getItem() instanceof IInfinityBoosterCardHolder) {
-            setSavedSlot(hostItem, boosterCard, SlotType.boosterCard);
-        }
-    }
-
-    public ItemStack getBoosterCard(ItemStack hostItem) {
-        return getSavedSlot(hostItem, SlotType.boosterCard);
-    }
-
     @Override
     public boolean shouldCauseReequipAnimation(ItemStack oldStack, ItemStack newStack, boolean slotChanged) {
         return slotChanged;

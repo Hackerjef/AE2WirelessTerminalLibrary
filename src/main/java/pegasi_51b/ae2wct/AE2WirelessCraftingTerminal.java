@@ -17,7 +17,6 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
 import net.minecraftforge.registries.IForgeRegistry;
 import net.minecraftforge.registries.IForgeRegistryEntry;
-import pegasi_51b.ae2wct.Events;
 import pegasi_51b.ae2wct.client.ae2wctlibclient;
 import pegasi_51b.ae2wct.init.Menus;
 import pegasi_51b.ae2wct.init.ModItems;
@@ -38,7 +37,6 @@ public class AE2WirelessCraftingTerminal {
         IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
         bus.addGenericListener(Item.class,this::items);
         bus.addGenericListener(ContainerType.class, Menus::menus);
-        MinecraftForge.EVENT_BUS.addListener(Events::serverTick);
         bus.addListener(this::common);
         if (FMLEnvironment.dist.isClient()) {
             bus.addListener(ae2wctlibclient::setup);
@@ -57,8 +55,6 @@ public class AE2WirelessCraftingTerminal {
 
 
     public void items(RegistryEvent.Register<Item> e) {
-        register("infinity_booster_card", ModItems.INFINITY_BOOSTER_CARD, e.getRegistry());
-        register("magnet_card", ModItems.MAGNET_CARD, e.getRegistry());
         register("wireless_crafting_terminal", ModItems.CRAFTING_TERMINAL, e.getRegistry());
     }
 

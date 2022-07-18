@@ -71,33 +71,28 @@ public abstract class WTGuiObject implements IGuiItemObject, IEnergySource, IAct
     }
 
     public boolean rangeCheck() {
-        Item item = effectiveItem.getItem();
-        if (item instanceof IInfinityBoosterCardHolder) {
-            boolean hasBoosterCard = ((IInfinityBoosterCardHolder)item).hasBoosterCard(effectiveItem);
-            sqRange = myRange = Double.MAX_VALUE;
+        this.sqRange = this.myRange = Double.MAX_VALUE;
 
-            if (targetGrid != null && itemStorage != null) {
-                if (myWap != null) {
-                    if (myWap.getGrid() == targetGrid) {
-                        return testWap(myWap) || hasBoosterCard;
-                    }
-                    return hasBoosterCard;
-                } else isOutOfRange = true;
-
-                final IMachineSet tw = targetGrid.getMachines(WirelessTileEntity.class);
-
-                myWap = null;
-
-                for (final IGridNode n : tw) {
-                    final IWirelessAccessPoint wap = (IWirelessAccessPoint) n.getMachine();
-                    if (testWap(wap)) {
-                        myWap = wap;
-                    }
+        if (this.targetGrid != null && this.itemStorage != null) {
+            if (this.myWap != null) {
+                if (this.myWap.getGrid() == this.targetGrid && this.testWap(this.myWap)) {
+                    return true;
                 }
-
-                return myWap != null || hasBoosterCard;
+                return false;
             }
-            return hasBoosterCard;
+
+            final IMachineSet tw = this.targetGrid.getMachines(WirelessTileEntity.class);
+
+            this.myWap = null;
+
+            for (final IGridNode n : tw) {
+                final IWirelessAccessPoint wap = (IWirelessAccessPoint) n.getMachine();
+                if (this.testWap(wap)) {
+                    this.myWap = wap;
+                }
+            }
+
+            return this.myWap != null;
         }
         return false;
     }
@@ -147,12 +142,6 @@ public abstract class WTGuiObject implements IGuiItemObject, IEnergySource, IAct
         rangeCheck();
         if(myWap != null) {
             return myWap.getActionableNode();
-        }
-        Item item = effectiveItem.getItem();
-        if (item instanceof IInfinityBoosterCardHolder && ((IInfinityBoosterCardHolder) item).hasBoosterCard(effectiveItem)) {
-            if (targetGrid != null) {
-                return targetGrid.getPivot();
-            }
         }
         return null;
     }

@@ -46,9 +46,6 @@ import pegasi_51b.ae2wct.terminal.AbstractWirelessTerminalItem;
 import pegasi_51b.ae2wct.terminal.InternalInventory;
 import pegasi_51b.ae2wct.terminal.SlotType;
 import pegasi_51b.ae2wct.terminal.WTInventoryHandler;
-import pegasi_51b.ae2wct.wirelesscraftingterminal.magnet_card.ItemMagnetCard;
-import pegasi_51b.ae2wct.wirelesscraftingterminal.magnet_card.MagnetSettings;
-//import pegasi_51b.ae2wct.wut.WUTItem;
 
 import java.util.List;
 import java.util.Objects;
@@ -107,45 +104,6 @@ public class WirelessCraftingTerminalContainer extends ItemTerminalContainer imp
 
         this.onCraftMatrixChanged(new WrapperInvItemHandler(craftingGridInv));
 
-        addSlot(new AppEngSlot(wtInventoryHandler, 3) {// 8, -76
-
-            @OnlyIn(Dist.CLIENT)
-            public Pair<ResourceLocation, ResourceLocation> getBackground() {
-                return Pair.of(PlayerContainer.LOCATION_BLOCKS_TEXTURE, PlayerContainer.EMPTY_ARMOR_SLOT_HELMET);
-            }
-        },SlotSemantic.MACHINE_INPUT);
-        addSlot(new AppEngSlot(wtInventoryHandler, 2) {//, 8, -58
-            @OnlyIn(Dist.CLIENT)
-            public Pair<ResourceLocation, ResourceLocation> getBackground() {
-                return Pair.of(PlayerContainer.LOCATION_BLOCKS_TEXTURE, PlayerContainer.EMPTY_ARMOR_SLOT_CHESTPLATE);
-            }
-        },SlotSemantic.MACHINE_PROCESSING);
-        addSlot(new AppEngSlot(wtInventoryHandler, 1) {//, 8, -40
-            @OnlyIn(Dist.CLIENT)
-            public Pair<ResourceLocation, ResourceLocation> getBackground() {
-                return Pair.of(PlayerContainer.LOCATION_BLOCKS_TEXTURE, PlayerContainer.EMPTY_ARMOR_SLOT_LEGGINGS);
-            }
-        },SlotSemantic.MACHINE_OUTPUT);
-        addSlot(new AppEngSlot(wtInventoryHandler, 0) {//, 8, -22
-            @OnlyIn(Dist.CLIENT)
-            public Pair<ResourceLocation, ResourceLocation> getBackground() {
-                return Pair.of(PlayerContainer.LOCATION_BLOCKS_TEXTURE, PlayerContainer.EMPTY_ARMOR_SLOT_BOOTS);
-            }
-        },SlotSemantic.MACHINE_CRAFTING_GRID);
-
-        addSlot(new AppEngSlot(wtInventoryHandler, WTInventoryHandler.OFFHAND) {//, 80, -22
-            @OnlyIn(Dist.CLIENT)
-            public Pair<ResourceLocation, ResourceLocation> getBackground() {
-                return Pair.of(PlayerContainer.LOCATION_BLOCKS_TEXTURE, PlayerContainer.EMPTY_ARMOR_SLOT_SHIELD);
-            }
-        },SlotSemantic.PROCESSING_RESULT);
-
-        addSlot(new AppEngSlot(wtInventoryHandler, WTInventoryHandler.TRASH),SlotSemantic.INSCRIBER_PLATE_BOTTOM);//, 98, -22
-        addSlot(new AppEngSlot(wtInventoryHandler, WTInventoryHandler.INFINITY_BOOSTER_CARD),SlotSemantic.BIOMETRIC_CARD);//, 134, -20
-        addSlot(new AppEngSlot(wtInventoryHandler, WTInventoryHandler.MAGNET_CARD),SlotSemantic.INSCRIBER_PLATE_TOP);//TODO fetch texture for card background , 152, -20
-
-        //onCraftMatrixChanged(null);
-
     }
 
     @Override
@@ -195,38 +153,6 @@ public class WirelessCraftingTerminalContainer extends ItemTerminalContainer imp
     public IGridNode getNetworkNode() {
         return wctGUIObject.getActionableNode();
     }
-
-    public void deleteTrashSlot() {
-        wtInventoryHandler.setStackInSlot(WTInventoryHandler.TRASH, ItemStack.EMPTY);
-    }
-
-    private MagnetSettings magnetSettings;
-
-    public MagnetSettings getMagnetSettings() {
-        if(magnetSettings == null) return reloadMagnetSettings();
-        return magnetSettings;
-    }
-
-    public void saveMagnetSettings() {
-        ItemMagnetCard.saveMagnetSettings(wctGUIObject.getItemStack(), magnetSettings);
-    }
-
-    public MagnetSettings reloadMagnetSettings() {
-        magnetSettings = ItemMagnetCard.loadMagnetSettings(wctGUIObject.getItemStack());
-        //todo, this needs to be done another way
-  //      if(isClient() && screen != null) screen.resetMagnetSettings();
-        return magnetSettings;
-    }
-
-    // private WirelessCraftingTerminalScreen screen;
-
-    // public void setScreen(WirelessCraftingTerminalScreen screen) {
-    //     this.screen = screen;
-    // }
-
-//    public boolean isWUT() {
-//        return wctGUIObject.getItemStack().getItem() instanceof WUTItem;
-//    }
 
     @Override
     public List<ItemStack> getViewCells() {

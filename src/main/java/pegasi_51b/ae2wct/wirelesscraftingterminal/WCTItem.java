@@ -5,10 +5,9 @@ import appeng.core.AEConfig;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import pegasi_51b.ae2wct.terminal.AbstractWirelessTerminalItem;
-import pegasi_51b.ae2wct.terminal.IInfinityBoosterCardHolder;
 import pegasi_51b.ae2wct.AE2WirelessCraftingTerminal;
 
-public class WCTItem extends AbstractWirelessTerminalItem implements IInfinityBoosterCardHolder {
+public class WCTItem extends AbstractWirelessTerminalItem {
 
     public WCTItem() {
         super(AEConfig.instance().getWirelessTerminalBattery(), new Properties().group(AE2WirelessCraftingTerminal.ITEM_GROUP).maxStackSize(1));

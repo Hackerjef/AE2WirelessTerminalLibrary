@@ -13,7 +13,6 @@ import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import pegasi_51b.ae2wct.terminal.AbstractWirelessTerminalItem;
-import pegasi_51b.ae2wct.terminal.IInfinityBoosterCardHolder;
 
 import java.util.HashMap;
 import java.util.UUID;
@@ -72,7 +71,6 @@ public class CraftingTerminalHandler {
     private double sqRange = Double.MAX_VALUE;
 
     public boolean inRange() {
-        if(((IInfinityBoosterCardHolder) craftingTerminal.getItem()).hasBoosterCard(craftingTerminal)) return true;
         sqRange = Double.MAX_VALUE;
 
         if(getTargetGrid() == null) return false;

@@ -3,7 +3,6 @@ package pegasi_51b.ae2wct.net;
 import net.minecraft.util.ResourceLocation;
 import net.minecraftforge.fml.network.NetworkRegistry;
 import net.minecraftforge.fml.network.simple.SimpleChannel;
-import pegasi_51b.ae2wct.net.server.*;
 import pegasi_51b.ae2wct.AE2WirelessCraftingTerminal;
 
 public class PacketHandler {
@@ -19,20 +18,9 @@ public class PacketHandler {
                 buffer -> new C2SCycleTerminalPacket(),
                 C2SCycleTerminalPacket::handle);
 
-        INSTANCE.registerMessage(i++, C2SDeleteTrashPacket.class,
-                C2SDeleteTrashPacket::encode,
-                C2SDeleteTrashPacket::new,
-                C2SDeleteTrashPacket::handle);
-
         INSTANCE.registerMessage(i++, C2SSwitchGuiPacket.class,
                 C2SSwitchGuiPacket::encode,
                 C2SSwitchGuiPacket::new,
                 C2SSwitchGuiPacket::handle);
-
-        INSTANCE.registerMessage(i++, C2SSetMagnetModePacket.class,
-                C2SSetMagnetModePacket::encode,
-                C2SSetMagnetModePacket::new,
-                C2SSetMagnetModePacket::handle);
-
     }
 }

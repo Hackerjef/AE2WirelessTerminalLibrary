@@ -1,21 +1,7 @@
 {
   "itemGroup.ae2wctlib": "AE2 Wireless Crafting Terminal",
   "key.category.ae2wctlib": "AE2 Wireless Crafting Terminal",
-
-  "gui.ae2wctlib.emptytrash": "Empty Trash",
-  "gui.ae2wctlib.emptytrash.desc": "Delete contents of the Trash slot",
-
-  "item.ae2wctlib.infinity_booster_card": "Infinity Booster Card",
-  "item.ae2wctlib.infinity_booster_card.desc": "Expands Wireless Terminals to infinity",
-  "item.ae2wctlib.magnet_card": "Magnet Card",
-  "item.ae2wctlib.magnet_card.desc": "Magnet upgrade for the Wireless Crafting Terminal",
-  "gui.ae2wctlib.magnet_card": "Magnet Card",
-  "gui.ae2wctlib.magnetcard.desc.off": "Off",
-  "gui.ae2wctlib.magnetcard.desc.inv": "Pickup to Inventory",
-  "gui.ae2wctlib.magnetcard.desc.me": "Pickup to ME",
-
   "item.ae2wctlib.wireless_crafting_terminal": "Wireless Crafting Terminal",
   "AppEng.GuiITooltip.Unlinked": "Unlinked",
-
   "key.ae2wctlib.wct": "Open Wireless Crafting Terminal"
 }

@@ -21,7 +21,6 @@ import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import pegasi_51b.ae2wct.wirelesscraftingterminal.CraftingTerminalHandler;
-import pegasi_51b.ae2wct.wirelesscraftingterminal.magnet_card.ItemMagnetCard;
 
 @Mixin(PlayerInventory.class)
 public class PlayerInventoryMixin {
@@ -35,16 +34,5 @@ public class PlayerInventoryMixin {
         if(stack.isEmpty()) return;
         CraftingTerminalHandler CTHandler = CraftingTerminalHandler.getCraftingTerminalHandler(player);
         ItemStack terminal = CTHandler.getCraftingTerminal();
-        if(ItemMagnetCard.isPickupME(terminal) && CTHandler.inRange()) {
-            final ILocatable securityStation = CTHandler.getSecurityStation();
-            if(securityStation == null) return;
-            IGrid targetGrid = CTHandler.getTargetGrid();
-            IStorageGrid sg = targetGrid.getCache(IStorageGrid.class);
-            IMEMonitor<IAEItemStack> itemStorage = sg.getInventory(Api.instance().storage().getStorageChannel(IItemStorageChannel.class));
-            IAEItemStack leftover = itemStorage.injectItems(AEItemStack.fromItemStack(stack), Actionable.MODULATE, new PlayerSource(player, (IActionHost) securityStation));
-
-            if(leftover == null || leftover.createItemStack().isEmpty()) stack.setCount(0);
-            else stack.setCount(leftover.createItemStack().getCount());
-        }
     }
 }

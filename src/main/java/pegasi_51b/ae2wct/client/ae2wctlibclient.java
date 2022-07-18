@@ -16,50 +16,8 @@ import java.io.FileNotFoundException;
 public class ae2wctlibclient {
 
     public static void setup(FMLClientSetupEvent e) {
-        register(Menus.WCT, WirelessCraftingTerminalScreen::new,"/screens/wtlib/wireless_crafting_terminal.json");
-
-  /*      ClientPlayNetworking.registerGlobalReceiver(new Identifier("ae2wtlib", "interface_terminal"), (client, handler, buf, responseSender) -> {
-            buf.retain();
-            client.execute(() -> {
-                if (client.player == null) return;
-
-                final Screen screen = MinecraftClient.getInstance().currentScreen;
-                if (screen instanceof WITScreen) {
-                    WITScreen s = (WITScreen) screen;
-                    CompoundNBT tag = buf.readCompoundTag();
-                    if (tag != null) s.postUpdate(tag);
-                }
-                buf.release();
-            });
-        });*/
-        //registerKeybindings();
+        register(Menus.WCT, WirelessCraftingTerminalScreen::new, "/screens/wtlib/wireless_crafting_terminal.json");
     }
-
-  /*  static KeyBinding wct = new KeyBinding("key.ae2wtlib.wct", GLFW.GLFW_KEY_UNKNOWN, "key.category.ae2wtlib");
-    static KeyBinding wpt = new KeyBinding("key.ae2wtlib.wpt", GLFW.GLFW_KEY_UNKNOWN, "key.category.ae2wtlib");
-    static KeyBinding wit = new KeyBinding("key.ae2wtlib.wit", GLFW.GLFW_KEY_UNKNOWN, "key.category.ae2wtlib");
-
-    public static void registerKeybindings() {
-        ClientRegistry.registerKeyBinding(wct);
-        ClientRegistry.registerKeyBinding(wpt);
-        ClientRegistry.registerKeyBinding(wit);
-    }
-
-    public static void clientTick(TickEvent.ClientTickEvent e) {
-        if (e.phase == TickEvent.Phase.END) {
-            while (wct.isPressed()) {
-      //          PacketHandler.INSTANCE.sendToServer(new C2SHotkeyPacket("crafting"));
-            }
-            while (wpt.isPressed()) {
-     //           PacketHandler.INSTANCE.sendToServer(new C2SHotkeyPacket("pattern"));
-
-            }
-            while (wit.isPressed()) {
-          //      PacketHandler.INSTANCE.sendToServer(new C2SHotkeyPacket("interface"));
-            }
-        }
-    }*/
-
 
     /**
      * Registers a screen for a given container and ensures the given style is applied after opening the screen.
