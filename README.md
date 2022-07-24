@@ -8,13 +8,9 @@ It features wireless versions of Applied Energistics 2 crafting terminal with su
 which allows terminals to work from everywhere and even across dimensions.
 
 ## Missing Features / Known Issues
-
-- Magnet Card can't filter items
 - Curios support
-- support for viewcells
 
 ## License
-
 * Applied Energistics 2 Wireless Terminals
   - (c) 2021 Tfarecnim
   - [![License](https://img.shields.io/badge/License-MIT-red.svg?style=flat-square)](http://opensource.org/licenses/MIT)
